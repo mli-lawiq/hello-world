@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'  
+Transform: 'AWS::Serverless-2016-10-31'  
+Description: Lambda - different lambda functions
+Resources:  
+  LambdaExamples:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: lambda_example1
+      Handler: lambda1/lambda_example1.lambda_handler
+      Runtime: python3.8
+      Description: Lambda - first lambda example
+      MemorySize: 128
+      Timeout: 7
+      Role: arn:aws:iam::820656827628:role/LambdaRoleExample
