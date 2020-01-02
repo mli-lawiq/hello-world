@@ -6,7 +6,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: lambda_example1
-      Handler: lambda_example1.lambda_handler
+      Handler: lambda1/lambda_example1.lambda_handler
       Runtime: python3.8
       Description: Lambda - first lambda example
       MemorySize: 128
@@ -15,7 +15,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: lambda_example2
-      Handler: lambda_example2.lambda_handler
+      Handler: lambda2/lambda_example2.lambda_handler
       Runtime: python3.8
       Description: Lambda - bronze acquisition metrics
       MemorySize: 128
