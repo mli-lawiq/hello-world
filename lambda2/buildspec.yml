@@ -2,7 +2,7 @@ version: 0.2
 phases:  
   install:
     commands:
-      - aws cloudformation package --template-file lambda2_template.yaml --s3-bucket tests3bucket-test --output-template-file lambda2-output-template.yaml
+      - aws cloudformation package --template-file lambda2/lambda2_template.yaml --s3-bucket tests3bucket-test --output-template-file lambda2-output-template.yaml
 artifacts:  
   type: zip
   files:
